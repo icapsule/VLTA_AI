@@ -9,7 +9,6 @@ node_modules/
 .Trashes
 
 # VitePress / Build
-dist/
 .vitepress/dist
 .vitepress/cache
 
