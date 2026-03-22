@@ -16,9 +16,9 @@
 2. 找到 **Ignored Build Step** 面板。
 3. 将下方的拦截 Shell 脚本填入框中并保存：
    ```bash
-   git log -1 --pretty=%B | grep -q '\[build\]' && exit 1 || exit 0
+   echo "$VERCEL_GIT_COMMIT_MESSAGE" | grep -q '\[build\]' && exit 1 || exit 0
    ```
-   *(释义：当提交信息包含 `[build]` 时，返回退出码 1 允许 Vercel 部署；否则返回退出码 0 让 Vercel 自动取消部署，实现零资源损耗。)*
+   *(释义：Vercel 会自动注入环境变量。当提交信息包含 `[build]` 时，返回退出码 1 允许部署；否则返回 0 自动取消部署。)*
 
 ---
 
@@ -40,3 +40,6 @@ git commit -m "release: 新增关于 MCP 模型端点协议的深入研究 [buil
 git push
 ```
 伴随这句提交通行证，云端节点被瞬间唤醒，即刻为您重塑最新的知识版图！
+
+Update
+
