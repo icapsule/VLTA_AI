@@ -18,7 +18,7 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '🧠 LLM 底座层 (Foundation)',
+        text: '🧠 大模型底座 (LLM Foundation)',
         collapsed: false,
         items: [
           { text: '全景概览', link: '/knowledge/llm/index' },
@@ -28,28 +28,29 @@ export default defineConfig({
         ]
       },
       {
-        text: '🤖 智能体系统 (Capability)',
+        text: '🤖 智能体平台 (Agent Platforms)',
         collapsed: false,
         items: [
-          { text: '从对话到行动', link: '/knowledge/agents/index' },
-          { text: 'MCP 协议规范', link: '/knowledge/agents/mcp-protocol' },
-          { text: 'FastMCP 实战', link: '/knowledge/agents/mcp-fastmcp' }
+          { text: '平台对标总览', link: '/knowledge/agents/comparison' },
+          { text: 'Manus (云端员工)', link: '/knowledge/agents/manus' },
+          { text: 'OpenClaw (本地系统)', link: '/knowledge/agents/open-claw' },
+          { text: 'Google AI Studio', link: '/knowledge/solutions/google-ai-studio' },
+          { text: 'MCP 协议规范', link: '/knowledge/agents/mcp-protocol' }
         ]
       },
       {
-        text: '🛠 实战方案层 (Solutions)',
+        text: '🛠️ 生产力工具 (Productivity)',
         collapsed: false,
         items: [
-          { text: '中小企业 AI 策略', link: '/knowledge/solutions/sme-ai-strategy' },
-          { text: 'Mac mini AI 宿主', link: '/knowledge/solutions/mac-mini-host' },
-          { text: 'AI 工具图谱', link: '/knowledge/solutions/ai-tools' }
+          { text: 'AI 工具图谱', link: '/knowledge/solutions/ai-tools' },
+          { text: 'Mac mini AI 宿主', link: '/knowledge/solutions/mac-mini-host' }
         ]
       },
       {
-        text: '🧭 核心理论 (Concepts)',
+        text: '🧭 认知与理论 (Theory)',
         collapsed: true,
         items: [
-          { text: '技术全景漫游', link: '/knowledge/concepts/ai-panorama' },
+          { text: '概念全景漫游', link: '/knowledge/concepts/ai-panorama' },
           { text: '产品需求文档 (PRD)', link: '/docs/PRD' },
           { text: '技术宪法规范 (SPEC)', link: '/docs/PROJECT_SPEC' }
         ]
