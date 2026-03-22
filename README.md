@@ -6,6 +6,35 @@
 
 ## 🌎 部署协议与效能管理 (Vercel Deployment Protocol)
 
+### 🚀 控制构建成本 (Control Your Builds)
+
+由于 Vercel 免费版有 100 次/天的构建限制，本项目采用 **“双分支 + 关键词”** 的精细化控制策略：
+
+1.  **日常心流 (`dev` 分支)**：
+    - 改动、草稿、碎片化的提交全部推送到 `dev` 分支。
+    - **Vercel 不会构建 `dev` 分支**（除非您手动配置），这为您节省了大量次数。
+2.  **发布确认 (`main` 分支)**：
+    - 当内容在本地预览无误且准备上线时，合并到 `main` 分支并推送。
+3.  **手动触发器 (`[build]` 标签)**：
+    - 如果您在 `main` 上提交，但**不想**触发 Vercel 构建：直接提交即可。
+    - 如果您**想**让 Vercel 立即开始构建：在 Commit Message 中加入 **`[build]`**。
+
+#### 常用指令 (Daily Commands):
+
+```bash
+# 在 dev 分支愉快地写作
+git checkout dev
+git add .
+git commit -m "docs: 记录新的灵感"
+git push origin dev
+
+# 准备发布到线上
+git checkout main
+git merge dev
+git commit -m "build: 2.1 版本正式发布 [build]"
+git push origin main
+```
+
 鉴于“每日记录灵感”的频次极高，为了贯彻真正的极客精神（零浪费、最大化利用 Vercel 服务器时长），本知识库的 CI/CD 流程采取了**特定关键词黑客阻断（Ignored Build Step）**机制。
 
 ### ⚙️ 核心机制：严格按需构建
@@ -58,3 +87,6 @@ git push
 3. **推送到云端**：使用 `[build]` 关键词触发 Vercel 构建。
 
 没有任何发版压力，也没有任何失败提醒。专注知识，即是架构！
+
+现在需要测试一下dev分支改动, 按照规则, 不应该触发构建 , 因为我已经断开了Vercel的自动部署, 目前本地没有预览
+
