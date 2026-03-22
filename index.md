@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: 探索 AI 生态图谱
-      link: /AI tools
+      link: "/AI tools"
     - theme: alt
       text: 阅读架构定义 (PRD)
-      link: /PRD
+      link: "/PRD"
 
 features:
   - title: 🌐 软件研发新范式
