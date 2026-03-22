@@ -12,8 +12,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'AI 工具分类谱系', link: '/knowledge/AI-tools' },
-      { text: '2026 AI 终极漫游指南', link: '/knowledge/20260308-AI-General' }
+      { text: 'AI 工具分类谱系', link: '/knowledge/solutions/ai-tools' },
+      { text: '2026 AI 终极漫游指南', link: '/knowledge/concepts/ai-panorama' }
     ],
 
     sidebar: [
