@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "VLTA AI",
   description: "AI 驱动架构师的第二大脑",
+  outDir: '../dist',
   cleanUrls: true,
   
   // 忽略掉默认不会被当作文档的文件

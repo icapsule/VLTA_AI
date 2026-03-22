@@ -40,7 +40,3 @@ git commit -m "release: 新增关于 MCP 模型端点协议的深入研究 [buil
 git push
 ```
 伴随这句提交通行证，云端节点被瞬间唤醒，即刻为您重塑最新的知识版图！
-
-Update
-
-<!-- Vercel Webhook Test -->
