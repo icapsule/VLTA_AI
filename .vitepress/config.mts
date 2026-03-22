@@ -13,23 +13,23 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'AI 工具分类谱系', link: '/AI tools' },
-      { text: '2026 AI 终极漫游指南', link: '/20260308 AI General' }
+      { text: 'AI 工具分类谱系', link: '/knowledge/AI-tools' },
+      { text: '2026 AI 终极漫游指南', link: '/knowledge/20260308-AI-General' }
     ],
 
     sidebar: [
       {
         text: '📖 知识归档 (Knowledge Archive)',
         items: [
-          { text: 'AI 工具与生态定位', link: '/AI tools' },
-          { text: '关于大模型的全景认知', link: '/20260308 AI General' }
+          { text: 'AI 工具与生态定位', link: '/knowledge/AI-tools' },
+          { text: '关于大模型的全景认知', link: '/knowledge/20260308-AI-General' }
         ]
       },
       {
         text: '🛠 项目架构底座 (Architecture)',
         items: [
-          { text: '产品需求文档 (PRD)', link: '/PRD' },
-          { text: '技术宪法规范 (SPEC)', link: '/PROJECT_SPEC' }
+          { text: '产品需求文档 (PRD)', link: '/docs/PRD' },
+          { text: '技术宪法规范 (SPEC)', link: '/docs/PROJECT_SPEC' }
         ]
       }
     ],
