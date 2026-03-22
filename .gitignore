@@ -11,3 +11,7 @@ node_modules/
 # VitePress / Build
 .vitepress/dist
 .vitepress/cache
+
+# Local Env Secrets
+.env
+.env.*
