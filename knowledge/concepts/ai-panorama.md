@@ -39,20 +39,11 @@ https://www.xiaohongshu.com/explore/69821980000000000e03c95f?xsec_token=ABHihXLa
 - 🏗️ 【统一架构观消解术语壁垒】将全部AI系统抽象为“LLM（语义引擎）+ Context Augmentation（信息增强层）+ Orchestration Layer（编排代理层）”三元结构，不仅提供理解纷繁概念的元框架，更暗示未来技术收敛方向——即强化各层接口标准化、弱化中间概念冗余、推动能力内聚于终端产品，最终实现技术透明化与用户无感化。
 
 
-为什么在中小企业采用AI的过程中,作为一个3人的小型企业, 比起网上虚拟的一些环境, 其实一开始最合式的方式是购买一台 Macmini, 可以尝试应用各种不相关的AI解决方案, 可以充分应用Open source 的强大功能,  可以灵活实现不同的解决方案, 而且省去复杂的环境, 访问权限, 安全设置等, 在没有IT部门的前提下 最大限度的使用AI的可能性
-
-优点
-- 不绑定生态, 可以使用国内外各种模型, 而没有任何限制
-- 在必要的过程中可以使用Docker 部署 Openclaw , 在一个封闭的环境中保证安全性能
-
-
-关于模型
-最厉害的模型当属 Google Gemini , Claude Sonect OpenAI
-应用minimax 支持微信登录 
 
 
 
-编写一个 MCP (Model Context Protocol) Server 听起来很高大上，但得益于 Anthropic 官方推出的最新 `FastMCP` 框架，在 Python 中实现它简直就像写一个普通的函数一样简单。
+
+
 
 我们将利用 Mac Mini 的本地环境，把 Cisco Jasper 的 REST API 封装成一个标准的 MCP 工具（Tool）。这样，无论是 Dify 还是其他任何支持 MCP 的 AI Agent，只要连上这个 Server，就能瞬间“领悟”如何查询 SIM 卡状态。
 
@@ -61,4 +52,3 @@ https://www.xiaohongshu.com/explore/69821980000000000e03c95f?xsec_token=ABHihXLa
 
 Security - Zero Trust principle  
 
-Cisco API 

@@ -18,15 +18,38 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '📖 知识归档 (Knowledge Archive)',
+        text: '🧠 LLM 底座层 (Foundation)',
+        collapsed: false,
         items: [
-          { text: 'AI 工具与生态定位', link: '/knowledge/AI-tools' },
-          { text: '关于大模型的全景认知', link: '/knowledge/20260308-AI-General' }
+          { text: '全景概览', link: '/knowledge/llm/index' },
+          { text: 'Google Gemini', link: '/knowledge/llm/google-gemini' },
+          { text: 'OpenAI ChatGPT', link: '/knowledge/llm/openai-chatgpt' },
+          { text: 'Anthropic Claude', link: '/knowledge/llm/anthropic-claude' }
         ]
       },
       {
-        text: '🛠 项目架构底座 (Architecture)',
+        text: '🤖 智能体系统 (Capability)',
+        collapsed: false,
         items: [
+          { text: '从对话到行动', link: '/knowledge/agents/index' },
+          { text: 'MCP 协议规范', link: '/knowledge/agents/mcp-protocol' },
+          { text: 'FastMCP 实战', link: '/knowledge/agents/mcp-fastmcp' }
+        ]
+      },
+      {
+        text: '🛠 实战方案层 (Solutions)',
+        collapsed: false,
+        items: [
+          { text: '中小企业 AI 策略', link: '/knowledge/solutions/sme-ai-strategy' },
+          { text: 'Mac mini AI 宿主', link: '/knowledge/solutions/mac-mini-host' },
+          { text: 'AI 工具图谱', link: '/knowledge/solutions/ai-tools' }
+        ]
+      },
+      {
+        text: '🧭 核心理论 (Concepts)',
+        collapsed: true,
+        items: [
+          { text: '技术全景漫游', link: '/knowledge/concepts/ai-panorama' },
           { text: '产品需求文档 (PRD)', link: '/docs/PRD' },
           { text: '技术宪法规范 (SPEC)', link: '/docs/PROJECT_SPEC' }
         ]

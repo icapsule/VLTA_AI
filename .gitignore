@@ -9,6 +9,7 @@ node_modules/
 .Trashes
 
 # VitePress / Build
+.vitepress/dist
 .vitepress/cache
 
 # Local Env Secrets

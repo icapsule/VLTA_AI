@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 探索 AI 生态图谱
-      link: "/knowledge/AI-tools"
+      link: "/knowledge/llm/index"
     - theme: alt
       text: 阅读架构定义 (PRD)
       link: "/docs/PRD"
